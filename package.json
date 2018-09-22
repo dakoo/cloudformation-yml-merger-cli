@@ -1,6 +1,6 @@
 {
   "name": "cloudformation-yml-merger-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This is a CLI tool to merge multiple AWS cloudformation template yaml files into one.",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,6 @@
     "cli",
     "tool"
   ],
-  "author": "Hochul Shin<hochul.shin0@gmail.com> (http://hochulshin.com)",
   "license": "MIT",
   "dependencies": {
     "cloudformation-yml-merger": "^1.0.4"
