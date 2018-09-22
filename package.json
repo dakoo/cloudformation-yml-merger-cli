@@ -25,6 +25,6 @@
   "author": "hochul shin <hochul.shin0@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "cloudformation-yml-merger": "^1.0.3"
+    "cloudformation-yml-merger": "^1.0.4"
   }
 }
