@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const merge = require('cloudformation-yml-merger').default;
 const logger = require('./src/colorCli');
 

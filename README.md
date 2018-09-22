@@ -108,8 +108,14 @@ $ npm install -g cloudformation-yml-merger-cli
 Merge multiple yml template files into one big yml file to deploy to your AWS account.
 
 ```bash
-$ cloudformation-yml-merger -i absolute-path-to-folder-containing-yml-files -o target-yml-file-name
+$ cloudformation-yml-merger-cli -i path-to-folder -o target-yml-file
 ```
 
-- absolute-path-to-folder-containing-yml-files: the absolute path to the folder contains multiple yml files and sub folders to be merged. An error happens if it's not provided, it doesn't exist, it's not an absolute path, it doesn't contain any yml file, or any yml file doesn't contain the AWSTemplateFormatVersion.
-- target-yml-file-name: the absolute path of the target file to be generated. An error happens if it's not provided or not an absolute path. 
+The example with the project folder structure above is.
+
+```
+$ cloudformation-yml-merger-cli -i cloudformation -o merged.yml
+```
+
+- path-to-folder : the path to the folder contains multiple yml files and sub folders to be merged. An error happens if it's not provided, it doesn't exist, it's not a direct child directory, it doesn't contain any yml file, or any yml file doesn't contain the AWSTemplateFormatVersion.
+- path-to-target-yml-file: the path of the target file to be generated. An error happens if it's not provided. 
