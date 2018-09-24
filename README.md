@@ -29,7 +29,7 @@ We could deploy the cloudformation and lambda functions all together to the AWS 
 
 ```
 $ cd project-root
-$ cloudformation-yml-merger -i cloudformation -o merged-cfn.yml
+$ cloudformation-yml-merger-cli -i cloudformation -o merged-cfn.yml
 $ sam package --template-file merged-cfn.yml --output-template-file serverless-output.yaml --s3-bucket s3-bucket-in-your-account
 $ sam deploy --template-file serverless-output.yaml --stack-name a-great-stack-name --capabilities CAPABILITY_IAM
 ```
